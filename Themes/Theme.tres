@@ -1,6 +1,0 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://baak7fs0chfwc"]
-
-[ext_resource type="FontFile" uid="uid://b8empdlxerwe4" path="res://Fonts/Tr2n.ttf" id="1_bevgq"]
-
-[resource]
-default_font = ExtResource("1_bevgq")

@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://wdr0docpj62x"]
-
-[ext_resource type="Texture2D" uid="uid://i3n1ql3adq7k" path="res://models/clu/textures/CLU_Eyes_baseColor.png" id="1_5r4i2"]
-
-[resource]
-resource_name = "CLU_Eyes"
-cull_mode = 2
-albedo_texture = ExtResource("1_5r4i2")
-roughness = 0.85630363
