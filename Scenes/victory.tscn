@@ -1,0 +1,119 @@
+[gd_scene load_steps=17 format=3 uid="uid://b0b48iiekjmm1"]
+
+[ext_resource type="Script" uid="uid://v24vay2yly8j" path="res://Scripts/victory.gd" id="1_apju7"]
+[ext_resource type="FontFile" uid="uid://b8empdlxerwe4" path="res://Fonts/Tr2n.ttf" id="2_apju7"]
+[ext_resource type="Texture2D" uid="uid://bo8gpyovb0xwl" path="res://Images/RETRY.png" id="3_jlpg3"]
+[ext_resource type="Texture2D" uid="uid://bb6d6oe7jq0w0" path="res://Images/RETRY PRESSED.png" id="4_8ghbj"]
+[ext_resource type="Texture2D" uid="uid://cie2co7a30k11" path="res://Images/RETRY HOOVER.png" id="5_uyb2r"]
+[ext_resource type="Texture2D" uid="uid://qyyad7b1d2h0" path="res://Scenes/IMAGES/TITLE-SCREEN.png" id="6_h0be3"]
+[ext_resource type="Texture2D" uid="uid://cq8wvnpyqfhku" path="res://Scenes/IMAGES/TITLE-SCREEN PRESSED.png" id="7_2mlro"]
+[ext_resource type="Texture2D" uid="uid://bo5ndwr16mw11" path="res://Scenes/IMAGES/TITLE-SCREEN HOOVER.png" id="8_4p7rg"]
+[ext_resource type="Texture2D" uid="uid://7kskyn2k6755" path="res://Images/SURE.png" id="9_a6r3f"]
+[ext_resource type="Texture2D" uid="uid://cdq1r3kuc5qhg" path="res://Images/YES.png" id="10_61tuo"]
+[ext_resource type="Texture2D" uid="uid://c2xpmmkf1rwpt" path="res://Images/YES PRESSED.png" id="11_3mnbe"]
+[ext_resource type="Texture2D" uid="uid://d236sr4aeq5eb" path="res://Images/YES HOOVER.png" id="12_boh26"]
+[ext_resource type="Texture2D" uid="uid://kpwyj5ymx85k" path="res://Images/NO.png" id="13_orkwh"]
+[ext_resource type="Texture2D" uid="uid://dpv74tu2pw06i" path="res://Images/NO PRESSED.png" id="14_074fl"]
+[ext_resource type="Texture2D" uid="uid://b5hs0ipjpq0ae" path="res://Images/NO HOOVER.png" id="15_julgg"]
+[ext_resource type="AudioStream" uid="uid://bxcl7748ldi17" path="res://sfx/the-game-has-changed.mp3" id="16_apju7"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_apju7")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 357.0
+offset_top = 229.0
+offset_right = 795.0
+offset_bottom = 329.0
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_apju7")
+theme_override_font_sizes/font_size = 100
+text = "VICTORY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RETRY" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 422.0
+offset_right = 1083.0
+offset_bottom = 822.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("3_jlpg3")
+texture_pressed = ExtResource("4_8ghbj")
+texture_hover = ExtResource("5_uyb2r")
+
+[node name="TITLESCREEN" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 641.0
+offset_top = 427.0
+offset_right = 1441.0
+offset_bottom = 827.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("6_h0be3")
+texture_pressed = ExtResource("7_2mlro")
+texture_hover = ExtResource("8_4p7rg")
+
+[node name="Confirmation" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 296.0
+offset_top = 176.0
+offset_right = -269.3333
+offset_bottom = -142.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sure" type="Sprite2D" parent="Confirmation"]
+position = Vector2(300, 115)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("9_a6r3f")
+
+[node name="Yes" type="TextureButton" parent="Confirmation"]
+layout_mode = 0
+offset_left = 91.99999
+offset_top = 225.99998
+offset_right = 892.0
+offset_bottom = 626.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("10_61tuo")
+texture_pressed = ExtResource("11_3mnbe")
+texture_hover = ExtResource("12_boh26")
+
+[node name="No" type="TextureButton" parent="Confirmation"]
+layout_mode = 0
+offset_left = 320.99997
+offset_top = 225.99998
+offset_right = 1121.0
+offset_bottom = 626.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("13_orkwh")
+texture_pressed = ExtResource("14_074fl")
+texture_hover = ExtResource("15_julgg")
+
+[node name="bgmusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_apju7")
+
+[connection signal="pressed" from="RETRY" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="TITLESCREEN" to="." method="_on_titlescreen_pressed"]
+[connection signal="pressed" from="Confirmation/Yes" to="." method="_on_yes_pressed"]
+[connection signal="pressed" from="Confirmation/No" to="." method="_on_no_pressed"]

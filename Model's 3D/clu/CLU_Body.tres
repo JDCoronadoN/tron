@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://vpv0y161qjb0"]
+
+[ext_resource type="Texture2D" uid="uid://gnqestxdgj8b" path="res://models/clu/textures/CLU_Body_baseColor.png" id="1_p2h6m"]
+[ext_resource type="Texture2D" uid="uid://bgiv4twpmfxiv" path="res://models/clu/textures/CLU_Body_emissive.png" id="2_iv2j6"]
+[ext_resource type="Texture2D" uid="uid://b6e8xktnnm4km" path="res://models/clu/textures/CLU_Body_metallicRoughness.png" id="3_xshoo"]
+[ext_resource type="Texture2D" uid="uid://cthasyvkybg4e" path="res://models/clu/textures/CLU_Body_normal.png" id="4_70x55"]
+
+[resource]
+resource_name = "CLU_Body"
+cull_mode = 2
+albedo_texture = ExtResource("1_p2h6m")
+metallic = 1.0
+metallic_texture = ExtResource("3_xshoo")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("3_xshoo")
+roughness_texture_channel = 1
+emission_enabled = true
+emission_texture = ExtResource("2_iv2j6")
+normal_enabled = true
+normal_texture = ExtResource("4_70x55")
