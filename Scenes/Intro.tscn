@@ -1,0 +1,337 @@
+[gd_scene load_steps=15 format=3 uid="uid://b6lh3p2256bje"]
+
+[ext_resource type="Script" uid="uid://ogkhq77l1u3w" path="res://Scripts/intro.gd" id="1_n2vaf"]
+[ext_resource type="Texture2D" uid="uid://dst0vg1wkwp4w" path="res://Scenes/IMAGES/TRON BLUE.png" id="2_bkn7a"]
+[ext_resource type="Texture2D" uid="uid://0a8nuea32xal" path="res://Scenes/IMAGES/GAMEBY.png" id="3_85384"]
+[ext_resource type="Texture2D" uid="uid://bhkpjg83xac8v" path="res://Scenes/IMAGES/TRON ORANGE.png" id="3_qemv1"]
+[ext_resource type="Texture2D" uid="uid://ljpiawesw8ny" path="res://Scenes/IMAGES/TRON RED.png" id="4_n2vaf"]
+[ext_resource type="Texture2D" uid="uid://cjtacvio2hvbp" path="res://Scenes/IMAGES/TEAM.png" id="4_qemv1"]
+[ext_resource type="Texture2D" uid="uid://b2nkhnoh34xy4" path="res://Scenes/IMAGES/GAMEBY ORANGE.png" id="6_yevow"]
+[ext_resource type="Texture2D" uid="uid://o8p3netw51gw" path="res://Scenes/IMAGES/GAMEBY RED.png" id="7_8paog"]
+[ext_resource type="Texture2D" uid="uid://bpyht57dmwtbj" path="res://Scenes/IMAGES/TEAM ORANGE.png" id="9_hwb36"]
+[ext_resource type="Texture2D" uid="uid://bk3xgfv2isqc4" path="res://Scenes/IMAGES/TEAM RED.png" id="10_hvfhr"]
+
+[sub_resource type="Animation" id="Animation_bkn7a"]
+resource_name = "Cierre"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CORTINA:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_f2b3h"]
+resource_name = "Intro"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CORTINA:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CORTINA2:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.5, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CORTINA3:color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(2, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("LOGO:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("LOGO2:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("LOGO3:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("GAME BY:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(2, 2.5, 2.75, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("GAME BY2:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(2, 2.5, 2.75, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("GAME BY3:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(2, 2.5, 2.75, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_w8r5c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CORTINA:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CORTINA2:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CORTINA3:color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("LOGO:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("LOGO2:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("LOGO3:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("GAME BY:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("GAME BY2:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("GAME BY3:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bkn7a"]
+_data = {
+&"Cierre": SubResource("Animation_bkn7a"),
+&"Intro": SubResource("Animation_f2b3h"),
+&"RESET": SubResource("Animation_w8r5c")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_n2vaf")
+
+[node name="FONDO" type="ColorRect" parent="."]
+offset_right = 1159.0
+offset_bottom = 648.0
+color = Color(3.723037e-05, 3.723037e-05, 3.7230366e-05, 1)
+
+[node name="LOGO" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(585, 188)
+scale = Vector2(1.4530698, 1.4454412)
+texture = ExtResource("2_bkn7a")
+
+[node name="LOGO2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(585, 188)
+scale = Vector2(1.4530698, 1.4454412)
+texture = ExtResource("3_qemv1")
+
+[node name="LOGO3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(585, 188)
+scale = Vector2(1.4530698, 1.4454412)
+texture = ExtResource("4_n2vaf")
+
+[node name="GAME BY" type="Sprite2D" parent="."]
+position = Vector2(590, 333)
+texture = ExtResource("3_85384")
+
+[node name="GAME BY2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(590, 333)
+texture = ExtResource("6_yevow")
+
+[node name="GAME BY3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(590, 333)
+texture = ExtResource("7_8paog")
+
+[node name="TEAM" type="Sprite2D" parent="."]
+position = Vector2(583, 508)
+scale = Vector2(0.6225, 0.6225)
+texture = ExtResource("4_qemv1")
+
+[node name="TEAM2" type="Sprite2D" parent="."]
+position = Vector2(583, 508)
+scale = Vector2(0.6225, 0.6225)
+texture = ExtResource("9_hwb36")
+
+[node name="TEAM3" type="Sprite2D" parent="."]
+position = Vector2(583, 508)
+scale = Vector2(0.6225, 0.6225)
+texture = ExtResource("10_hvfhr")
+
+[node name="CORTINA3" type="ColorRect" parent="."]
+offset_left = 240.0
+offset_top = 386.0
+offset_right = 939.979
+offset_bottom = 604.0
+color = Color(0, 0, 0, 1)
+
+[node name="CORTINA2" type="ColorRect" parent="."]
+offset_left = 157.0
+offset_top = 233.0
+offset_right = 1005.0
+offset_bottom = 410.0
+color = Color(0, 0, 0, 1)
+
+[node name="CORTINA" type="ColorRect" parent="."]
+offset_right = 1154.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Introduction" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_bkn7a")
+}
