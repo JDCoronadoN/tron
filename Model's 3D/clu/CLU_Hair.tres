@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dligsdleyjyb4"]
+
+[resource]
+resource_name = "CLU_Hair"
+cull_mode = 2
+albedo_color = Color(0.73680675, 0.93553895, 0.74299085, 1)
+roughness = 0.8142106

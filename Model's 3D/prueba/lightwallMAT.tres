@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dkydni1kxjwtf"]
+
+[ext_resource type="Texture2D" uid="uid://nwj734yo8ukw" path="res://models/lightwallOpponent/textures/lightwallTexture.png" id="1_jcoo7"]
+
+[resource]
+resource_name = "lightwallMAT"
+transparency = 4
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 0.52272725)
+albedo_texture = ExtResource("1_jcoo7")
+roughness = 0.11818182
+emission_enabled = true
+emission_energy_multiplier = 5.4999995
+emission_texture = ExtResource("1_jcoo7")
