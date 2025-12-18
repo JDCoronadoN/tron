@@ -1,0 +1,11 @@
+Model Information:
+* title:	Clu Rigged
+* source:	https://sketchfab.com/3d-models/clu-rigged-4bd4219cb57a4a7d8fb5c1f7b6059370
+* author:	SpringSociety (https://sketchfab.com/jcreadingtutor)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Clu Rigged" (https://sketchfab.com/3d-models/clu-rigged-4bd4219cb57a4a7d8fb5c1f7b6059370) by SpringSociety (https://sketchfab.com/jcreadingtutor) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

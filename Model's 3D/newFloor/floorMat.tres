@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://blphosag3ymwr"]
+
+[ext_resource type="Texture2D" uid="uid://dhjgeakten7jh" path="res://models/newFloor/floorFinal_rounded_square_stencil.png" id="1_uv12v"]
+
+[resource]
+resource_name = "floorMat"
+transparency = 4
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 0.5454545)
+albedo_texture = ExtResource("1_uv12v")
+metallic = 1.0
+roughness = 0.07272727
+emission_enabled = true
+emission_energy_multiplier = 3.1999998
+emission_texture = ExtResource("1_uv12v")
